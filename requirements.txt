@@ -102,10 +102,10 @@ opencv-python==4.5.1.48
 opt-einsum==3.3.0
 ordereddict==1.1
 packaging==20.9
-pandas==1.2.3
-pandocfilters==1.4.3
-parso==0.8.1
-pickleshare==0.7.5
+pandas
+pandocfilters
+parso
+pickleshare
 Pillow==8.1.0
 prometheus-client==0.9.0
 prompt-toolkit==3.0.16
