@@ -16,3 +16,4 @@ distribute
 requests
 tensorflow
 tensorflow-estimator
+distutils
