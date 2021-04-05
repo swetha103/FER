@@ -61,7 +61,7 @@ igraph==0.1.11
 imutils==0.5.4
 include==0.2.2
 ipykernel==5.5.0
-ipython==7.20.0
+ipython
 ipython-genutils==0.2.0
 ipywidgets==7.6.3
 isort==4.3.21
