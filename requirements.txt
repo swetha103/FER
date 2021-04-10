@@ -1,6 +1,6 @@
-fer==20.1.3
-Flask_WTF==0.14.3
-Flask==1.1.2
-opencv_python==4.5.1.48
-WTForms==2.3.3
+fer
+Flask_WTF
+Flask
+opencv_python
+WTForms
 
