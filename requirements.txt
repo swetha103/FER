@@ -2,7 +2,7 @@ tensorflow==2.0.0b1
 fer
 Flask_WTF
 Flask
-opencv_python
+opencv-python--headless
 WTForms
 gunicorn
 itsdangerous==1.1.0
