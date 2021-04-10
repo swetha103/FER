@@ -1,4 +1,4 @@
-tensorflow-cpu
+fer==19.0.2
 Flask_WTF
 Flask
 opencv-python--headless
