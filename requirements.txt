@@ -1,4 +1,4 @@
-fer==19.0.2
+fer-cpu
 Flask_WTF
 Flask
 opencv-python--headless
