@@ -1,5 +1,4 @@
 tensorflow-cpu
-fer
 Flask_WTF
 Flask
 opencv-python--headless
