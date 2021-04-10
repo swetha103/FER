@@ -9,3 +9,5 @@ Jinja2==2.10.1
 MarkupSafe==1.1.1
 Werkzeug==0.15.5
 mtcnn
+h5py~=2.10.0
+numpy~=1.19.2
