@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faciometrics</title>
+    <link rel="icon" type="image/gif/png" href="img.gif">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <style>
+        i.fa {
+            font-size: 44px;
+        }
+
+        #ig {
+            color: #ff5f40;
+            text-shadow: 0 0 30px #ff5f40;
+        }
+
+        progress {
+            height: 50px;
+        }
+
+
+        .camera_btn {
+            box-shadow: 0px 0px 46px 0px rgb(13, 110, 253, 0.514);
+        }
+
+        .camera_btn:hover {
+            box-shadow: -4px 6px 46px 20px rgba(13, 109, 253, 0.514);
+        }
+
+        * {
+            text-align: center;
+        }
+
+        .btn {
+            transform: translateY(4px);
+
+        }
+
+        /* Adding transformation when the button is active */
+
+        .btn:active {
+            transform: scale(0.98);
+            /* Scaling button to 0.98 to its original size */
+            box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+            /* Lowering the shadow */
+        }
+    </style>
+
+    <div class="container-fluid p-4 bg-info">
+        <h1 class="text-primary">FACIOMETRICS</h1>
+    </div>
+
+    <br>
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-3 p-4">
+            <form action="{{ url_for('index') }}" method="POST" enctype="multipart/form-data">
+                <button class="btn p-3 m-3 camera_btn bg-primary" type="submit" style="border-radius: 50px;"><i
+                        class="fa fa-camera" style="font-size:32px;color:white;"></i></button>
+            </form>
+        </div>
+    </div>
+
+    {{comment}}
+
+
+    <div class="mx-auto col-md-4  shandow-lg">
+        <img src="{{ url_for('static', filename=file_name) }}" class="img-fluid" alt="">
+    </div>
+    <br>
+
+    happy : {{happy}} <br>
+    <progress value="{{happy}}" max="1"> </progress> <br>
+    angry : {{angry}} <br>
+    <progress value="{{angry}}" max="1"> </progress> <br>
+    disgust : {{disgust}} <br>
+    <progress value="{{disgust}}" max="1"> </progress> <br>
+    fear : {{fear}} <br>
+    <progress value="{{fear}}" max="1"> </progress> <br>
+    sad : {{sad}} <br>
+    <progress value="{{sad}}" max="1"> </progress> <br>
+    surprise : {{surprise}} <br>
+    <progress value="{{surprise}}" max="1"> </progress> <br>
+    neutral : {{neutral}} <br>
+    <progress value="{{neutral}}" max="1"> </progress> <br>
+
+
+
+
+
+    <img src="" alt="">
+    {{res}}
+</body>
+
+</html>

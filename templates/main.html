@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faciometrics</title>
+    <link rel="icon" type="image/gif/png" href="img.gif">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ 
+    <div class="jumbotron bg-info p-4 text-center ">
+        <h1 class="text-white" style="text-shadow: 2px 2px rgba(13, 109, 253, 0.795);">Faciometrics</h1>
+    </div>
+
+    <div class="container row  mx-auto p-2 m-2">
+        <div class="col-md-6 p-2">
+            <h1 class="text-info">Face</h1>
+            <h1 class="text-info">Recognition</h1>
+            
+            <i class="fa fa-check-square text-primary"></i> PREVENT RETAIL CRIME <br><br>
+            <i class="fa fa-check-square text-primary"></i> UNLOCK PHONES <br><br>
+            <i class="fa fa-check-square text-primary"></i> SMARTER ADVERTISING <br><br>
+            <i class="fa fa-check-square text-primary"></i> FIND MISSING PERSONS <br><br>
+            <i class="fa fa-check-square text-primary"></i> HELP THE BLIND <br><br>
+            <a class="btn  btn-outline-info"  href="#dest">Try it!</a>
+        </div>
+        <div class="col-md-6">
+            <img src="{{url_for('static', filename='img.gif')}}" class="img-fluid"/>
+        </div>
+    </div>
+    <div id="dest">
+        <div class="container">
+            <i class="fa fa-square" style="color: violet;"></i>
+            <i class="fa fa-square" style="color: indigo;"></i>
+            <i class="fa fa-square" style="color: blue;"></i>
+            <i class="fa fa-square" style="color: green;"></i>
+            <i class="fa fa-square" style="color: yellow;"></i>
+            <i class="fa fa-square" style="color: orange;"></i>
+            <i class="fa fa-square" style="color: red;"></i>
+        </div>
+    
+        <div class="container row mx-auto d-flex justify-content-center m-4 p-4">
+            
+            <a href=loadindex2  class="card col-md-2 p-4 text-center m-4 shadow-lg text-light" style="background-color:orange;border-bottom: 4px solid orangered">
+                <div class="py-2">
+                    <i class="fa fa-picture-o" aria-hidden="true" style="font-size: 35px;"></i>
+                </div>
+                Upload Photo
+            </a>
+            
+            <a href="loadindex" class="card col-md-2 p-4 text-center m-4 shadow-lg text-light" style="background-color:violet;border-bottom: 4px solid purple">
+                <div class="py-2">
+                    <i class="fa fa-camera-retro" aria-hidden="true" style="font-size: 35px;"></i>
+                </div>
+                Capture live
+            </a>
+        </div>
+    </div>
+    
+</body>
+</html>
